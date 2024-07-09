@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ABinario));
             mostrarArbol = new TreeView();
             Generar = new Button();
             label1 = new Label();
@@ -40,11 +41,13 @@
             preOrden = new Button();
             postOrden = new Button();
             resultados = new Label();
+            pictureBox1 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // mostrarArbol
             // 
-            mostrarArbol.Location = new Point(55, 102);
+            mostrarArbol.Location = new Point(36, 45);
             mostrarArbol.Name = "mostrarArbol";
             mostrarArbol.Size = new Size(330, 298);
             mostrarArbol.TabIndex = 0;
@@ -52,7 +55,7 @@
             // 
             // Generar
             // 
-            Generar.Location = new Point(198, 61);
+            Generar.Location = new Point(179, 4);
             Generar.Name = "Generar";
             Generar.Size = new Size(75, 23);
             Generar.TabIndex = 1;
@@ -63,7 +66,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(95, 65);
+            label1.Location = new Point(76, 8);
             label1.Name = "label1";
             label1.Size = new Size(76, 15);
             label1.TabIndex = 2;
@@ -71,7 +74,7 @@
             // 
             // BRegresar
             // 
-            BRegresar.Location = new Point(70, 415);
+            BRegresar.Location = new Point(51, 358);
             BRegresar.Name = "BRegresar";
             BRegresar.Size = new Size(75, 23);
             BRegresar.TabIndex = 3;
@@ -155,12 +158,23 @@
             resultados.TabIndex = 11;
             resultados.Text = "Resultados";
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(667, 239);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(121, 200);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 12;
+            pictureBox1.TabStop = false;
+            // 
             // ABinario
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.shadowtree;
             ClientSize = new Size(800, 450);
+            Controls.Add(pictureBox1);
             Controls.Add(resultados);
             Controls.Add(postOrden);
             Controls.Add(preOrden);
@@ -177,6 +191,7 @@
             StartPosition = FormStartPosition.CenterScreen;
             Text = "ABinario";
             Load += ABinario_Load;
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -195,5 +210,6 @@
         private Button preOrden;
         private Button postOrden;
         private Label resultados;
+        private PictureBox pictureBox1;
     }
 }

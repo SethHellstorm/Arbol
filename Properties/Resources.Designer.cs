@@ -63,6 +63,16 @@ namespace Arbol.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap GOTG2_Baby_Groot {
+            get {
+                object obj = ResourceManager.GetObject("GOTG2_Baby_Groot", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap shadowtree {
             get {
                 object obj = ResourceManager.GetObject("shadowtree", resourceCulture);

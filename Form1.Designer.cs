@@ -31,6 +31,8 @@
             button1 = new Button();
             label1 = new Label();
             salir = new Button();
+            pictureBox1 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // button1
@@ -62,18 +64,31 @@
             salir.UseVisualStyleBackColor = true;
             salir.Click += salir_Click;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.BackColor = Color.Transparent;
+            pictureBox1.Image = Properties.Resources.GOTG2_Baby_Groot;
+            pictureBox1.Location = new Point(427, 74);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(319, 364);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 5;
+            pictureBox1.TabStop = false;
+            // 
             // Inicio
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.tree;
             ClientSize = new Size(800, 450);
+            Controls.Add(pictureBox1);
             Controls.Add(salir);
             Controls.Add(label1);
             Controls.Add(button1);
             Name = "Inicio";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Arboles";
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -83,5 +98,6 @@
         private Button button1;
         private Label label1;
         private Button salir;
+        private PictureBox pictureBox1;
     }
 }
