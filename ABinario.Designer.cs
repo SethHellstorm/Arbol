@@ -159,6 +159,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = Properties.Resources.shadowtree;
             ClientSize = new Size(800, 450);
             Controls.Add(resultados);
             Controls.Add(postOrden);
